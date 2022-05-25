@@ -1,2 +1,20 @@
+<script lang="ts">
+  export let message: string;
+  export let name = 'Unknown'
+</script>
+
 <h1>Welcome to SvelteKit</h1>
-<p>Visit <a href="https://kit.svelte.dev">kit.svelte.dev</a> to read the documentation</p>
+<p>
+  {message} {name}.
+</p>
+<form method="post">
+  <div>
+    <label>
+      Enter your name:
+      <input type="text" name="name"/>
+    </label>
+  </div>
+  <div>
+    <button type="submit">Go</button>
+  </div>
+</form>
